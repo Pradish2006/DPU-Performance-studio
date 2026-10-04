@@ -1,0 +1,185 @@
+.bottleneck-analysis h2 {
+  color: var(--navy-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bottleneck-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-item {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-left: 4px solid var(--accent-orange);
+}
+
+.summary-icon {
+  color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
+.summary-item h3 {
+  color: var(--navy-primary);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.summary-item p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.bottleneck-list {
+  margin-bottom: 2rem;
+}
+
+.bottleneck-list h3 {
+  color: var(--navy-primary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.bottleneck-item {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--navy-light);
+}
+
+.bottleneck-item.high {
+  border-left-color: var(--accent-red);
+}
+
+.bottleneck-item.medium {
+  border-left-color: var(--accent-orange);
+}
+
+.bottleneck-item.low {
+  border-left-color: var(--accent-blue);
+}
+
+.bottleneck-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bottleneck-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--navy-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.severity-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.severity-badge.high {
+  background: var(--accent-red);
+  color: var(--white-primary);
+}
+
+.severity-badge.medium {
+  background: var(--accent-orange);
+  color: var(--white-primary);
+}
+
+.severity-badge.low {
+  background: var(--accent-blue);
+  color: var(--white-primary);
+}
+
+.bottleneck-content {
+  color: var(--text-secondary);
+}
+
+.bottleneck-stage {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.bottleneck-description {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.bottleneck-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.bottleneck-metrics .metric {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bottleneck-metrics .metric.highlight {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.bottleneck-recommendation {
+  padding: 0.75rem;
+  background: var(--white-tertiary);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.no-bottlenecks {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  border: 2px solid var(--accent-green);
+}
+
+.recommendations-section h3 {
+  color: var(--navy-primary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.recommendations-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations-section li {
+  color: var(--text-secondary);
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recommendations-section li:last-child {
+  border-bottom: none;
+}
+
+.recommendations-section li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: 600;
+}

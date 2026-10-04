@@ -1,0 +1,64 @@
+.metrics-comparison h2 {
+  color: var(--navy-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metric-box {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.metric-box h3 {
+  color: var(--navy-primary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metric-chart {
+  height: 200px;
+}
+
+.metrics-table {
+  overflow-x: auto;
+}
+
+.metrics-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metrics-table th,
+.metrics-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.metrics-table th {
+  background: var(--navy-primary);
+  color: var(--white-primary);
+  font-weight: 600;
+}
+
+.metrics-table td {
+  color: var(--text-secondary);
+}
+
+.metrics-table tr:hover {
+  background: var(--white-tertiary);
+}
+
+.metrics-table .improvement {
+  color: var(--accent-green);
+  font-weight: 600;
+}

@@ -1,0 +1,198 @@
+.confidence-bar h2 {
+  color: var(--navy-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.overall-confidence {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--navy-light);
+}
+
+.overall-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.overall-header h3 {
+  color: var(--navy-primary);
+  font-size: 1.25rem;
+}
+
+.overall-score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.overall-score.high {
+  color: var(--accent-green);
+  background: #f0fff4;
+}
+
+.overall-score.medium {
+  color: var(--accent-blue);
+  background: #ebf8ff;
+}
+
+.overall-score.low {
+  color: var(--accent-orange);
+  background: #fffaf0;
+}
+
+.overall-bar {
+  height: 12px;
+  background: var(--white-tertiary);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.overall-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s ease;
+}
+
+.overall-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.confidence-breakdown h3 {
+  color: var(--navy-primary);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.confidence-item {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--navy-light);
+}
+
+.confidence-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.confidence-icon {
+  flex-shrink: 0;
+}
+
+.confidence-info {
+  flex: 1;
+}
+
+.confidence-info h4 {
+  color: var(--navy-primary);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.confidence-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.confidence-badge.high {
+  background: var(--accent-green);
+  color: var(--white-primary);
+}
+
+.confidence-badge.medium {
+  background: var(--accent-blue);
+  color: var(--white-primary);
+}
+
+.confidence-badge.low {
+  background: var(--accent-orange);
+  color: var(--white-primary);
+}
+
+.confidence-percentage {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy-primary);
+}
+
+.confidence-progress {
+  height: 8px;
+  background: var(--white-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.confidence-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.confidence-legend {
+  background: var(--white-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.confidence-legend h4 {
+  color: var(--navy-primary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.legend-color.high {
+  background: var(--accent-green);
+}
+
+.legend-color.medium {
+  background: var(--accent-blue);
+}
+
+.legend-color.low {
+  background: var(--accent-orange);
+}
